@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - LocalStorage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Tienda Online</h1>
+            <div class="carrito-header">
+                <button id="btnCarrito" class="carrito-toggle">
+                    Ver Carrito
+                    <span class="badge-carrito" id="contadorCarrito">0</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Dropdown del Carrito -->
+        <div id="carritoDropdown" class="carrito-dropdown">
+            <div class="carrito-header-top">
+                <h3>Mi Carrito</h3>
+                <button id="btnCerrarCarrito" class="btn-cerrar">×</button>
+            </div>
+            <div id="contenedorCarrito" class="carrito-lista">
+                <div class="carrito-vacio">
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            <div class="carrito-footer">
+                <div class="total-box">
+                    <span>Total:</span>
+                    <strong id="totalCarrito">0.00€</strong>
+                </div>
+                <button id="btnVaciarCarrito" class="btn-vaciar">Vaciar Carrito</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Productos</h2>
+        <div id="contenedor-productos" class="productos-grid"></div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
